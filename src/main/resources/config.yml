@@ -1,0 +1,9 @@
+#CASE SENSITIVE
+#Type the name of the world players should be teleported to if it detects Iridiumskyblock is disabled!
+world-name: 'world'
+
+#IridiumSkyblock world and nether world names
+#Only change these if you edited the skyblock world name
+
+iridiumskyblock-overworld: 'IridiumSkyblock'
+iridiumskyblock-nether: 'IridiumSkyblock_Nether'

@@ -1,0 +1,7 @@
+name: Iridiumskyblock-Checker
+version: ${project.version}
+main: ryvador.peachesisdum.Peachesisdum
+api-version: 1.16
+depend: [ IridiumSkyblock ]
+authors: [ RyVador ]
+description: peaches is dum, so this prevent's his dumbness
