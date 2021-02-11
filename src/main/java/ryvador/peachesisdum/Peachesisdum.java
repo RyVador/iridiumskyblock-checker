@@ -5,6 +5,8 @@ import com.iridium.iridiumskyblock.managers.IslandManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -15,6 +17,8 @@ import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.Location;
+import org.jetbrains.annotations.NotNull;
+import ryvador.peachesisdum.commands.maincommand;
 
 import java.security.DomainLoadStoreParameter;
 import java.util.List;
@@ -27,7 +31,7 @@ public final class Peachesisdum extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(this, this);
         this.getConfig().options().copyDefaults();
         this.saveDefaultConfig();
-
+        getCommand("ischecker").setExecutor(new maincommand());
 
 
 
@@ -98,8 +102,6 @@ public final class Peachesisdum extends JavaPlugin implements Listener {
 
 
     }
-
-
 
 
 }
